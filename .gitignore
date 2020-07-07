@@ -53,3 +53,13 @@ com_crashlytics_export_strings.xml
 crashlytics.properties
 crashlytics-build.properties
 fabric.properties
+
+# Added by Moromir
+QuizRouletteServer-build/.settings/
+QuizRouletteServer-build/QuizRouletteServer-code/.settings/
+QuizRouletteServer-build/QuizRouletteServer-code/.classpath
+QuizRouletteServer-build/QuizRouletteServer-code/.project
+QuizRouletteServer-build/QuizRouletteServer-test/.settings/
+QuizRouletteServer-build/QuizRouletteServer-test/.classpath
+QuizRouletteServer-build/QuizRouletteServer-test/.project
+QuizRouletteServer-build/.project

@@ -11,21 +11,40 @@ import java.util.List;
 public interface IRouletteV2Client extends IRouletteV1Client {
 
   /**
-   * Clears the students data store, by invoking the CLEAR command defined in
-   * the protocol (version 2).
+   * Clears the students data store, by invoking the CLEAR command defined in the
+   * protocol (version 2).
    * 
-   * @throws IOException 
+   * @throws IOException
+   * @throws ProtocolErrorException
    */
   public void clearDataStore() throws IOException;
 
   /**
    * Invokes the LIST command defined in the protocol (version 2), parses the
-   * response and converts it into a list of Student objects (using the JsonObjectMapper
-   * class and the StudentsList class).
+   * response and converts it into a list of Student objects (using the
+   * JsonObjectMapper class and the StudentsList class).
    * 
    * @return the list of students currently in the store
-   * @throws IOException 
+   * @throws IOException
    */
   public List<Student> listStudents() throws IOException;
 
+  /**
+   * 
+   * @return If the status of the previous command is success
+   */
+  public boolean isStatusSuccess();
+
+  /**
+   * 
+   * @return The number of added students with a previous load command.
+   */
+  public int getNumberOfNewStudents();
+
+  /**
+   * 
+   * @return The number of commands executed by the client (This is not the number
+   *         returned by server !)
+   */
+  public int getNumberOfCommands();
 }

@@ -28,7 +28,7 @@
 
 The goal of this lab is to **get familiar with TCP programming in Java**, by working both with a server and a client. We will consider a **custom application-level protocol**, the "Quiz Roulette" protocol, which is used to write sadistic client-server applications. More on this later.
 
-[![](images/roulette.gif)](http://www.imdb.com/title/tt0077416/)
+<!-- [![](images/roulette.gif)](http://www.imdb.com/title/tt0077416/) -->
 
 **For this lab, you can work in pairs**, so that you can discuss while you go through the tasks. Please make use of your two computers. Run the client on one computer and the server on the other. Validate that you are able to communicate across the network.
 
@@ -112,7 +112,7 @@ When this is clear, **go through the code** of the [QuizRouletteServer project](
 
 **If that is not the case, go back to this material and do some studying. It is not worth trying to progress blindly, otherwise…**
 
-![](images/progressing-blindly.gif)
+<!-- ![](images/progressing-blindly.gif) -->
 
 ### <a name="Task2"></a>Task 2: Execute the server and play with it
 
@@ -171,5 +171,5 @@ The last task of the lab is for you to **extend the server project** and to **ad
 
 Make sure that you have understood the difference between the two protocol versions. Analyze what is being asked and specifcy how you are going to implement it. It will essentially be done by storing some state in new variables and by serializing content in server responses. **This should be a piece of cake!**
 
-![](images/cake.gif)
+<!-- ![](images/cake.gif) -->
 
